@@ -33,6 +33,7 @@ jobs:
       output2: ${{ steps.step2.outputs.secondword }}
     steps:
       - run: echo ${{ needs.first.outputs.firstword }} ${{ needs.first.outputs.secondword }}
+      - run: sleep 15 && date
       - id: step1
         run: echo "firstword=foo" >> $GITHUB_OUTPUT
       - id: step2
