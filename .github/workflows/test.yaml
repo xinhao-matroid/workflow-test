@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   play:
-    uses: ./.github/workflows/call.yaml@main
+    uses: ./.github/workflows/call.yaml
   
   start:
     needs: play
