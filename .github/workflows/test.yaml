@@ -35,7 +35,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   play:
-    steps:
-      - uses: xinhao-matroid/workflow-test/.github/workflows/call.yaml@main
-      - name: failed
-        run: exit 1
+    setup:
+     uses: ./.github/workflows/call.yaml@main
+    start:
+      steps:
+        - name: failed
+          run: exit 1
