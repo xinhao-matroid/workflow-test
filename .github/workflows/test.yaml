@@ -39,6 +39,7 @@ jobs:
   
   start:
     needs: play
+    runs-on: ubuntu-latest
     steps:
       - name: failed
         run: exit 1
