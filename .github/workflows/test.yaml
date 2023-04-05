@@ -36,6 +36,6 @@ jobs:
           echo test, and deploy your project.
   play:
     steps:
-      - uses: xinhao-matroid/workflow-test/.github/workflows/call.yaml
+      - uses: xinhao-matroid/workflow-test/.github/workflows/call.yaml@v1
       - name: failed
         run: exit 1
